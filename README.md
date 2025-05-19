@@ -39,6 +39,8 @@ Before anything else, the wiring must be done correctly. Below is a table that s
 | 22                      | BCM 25             | INTn         |
 | 24                      | SPI0_CE0           | SCNn         |
 
+Here is the corresponding pins on the raspberry pi : [`/docs/resources/pins_dispositions.png`](./docs/resources/pins_dispositions.png)
+
 ---
 
 ## Software Setup
