@@ -16,9 +16,9 @@ Whether you're auditing network infrastructure or simulating insider threats, Cy
 
 To get started, follow these step-by-step guides:
 
-1. 🧱 [3D Printed Case & Hardware Assembly](./docs/resources/3d_Printed_Case_And_Assembly.md)  
-2. 🧩 [Hardware & Software Setup](./docs/resources/Hardware_And_Software_Setup.md)  
-3. 🔋 [Technical Specs & Charging Instructions](./docs/resources/Technical_Specs_And_Charging_Instructions.md)
+1. 🧱 [3D Printed Case & Hardware Assembly](./docs/3d_Printed_Case_And_Assembly.md)  
+2. 🧩 [Hardware & Software Setup](./docs/Hardware_And_Software_Setup.md)  
+3. 🔋 [Technical Specs & Charging Instructions](./docs/Technical_Specs_And_Charging_Instructions.md)
 
 ---
 
