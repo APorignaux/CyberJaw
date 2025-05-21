@@ -1,44 +1,73 @@
-# CyberJaw - Hotplug Network Attack Device
+# 🦈 CyberJaw – Hotplug Network Attack Device
 
-## Overview
-
-**CyberJaw** is a custom-built, compact network attack device inspired by the Shark Jack, leveraging a Raspberry Pi Zero 2W. Designed for red team engagements and network security assessments, CyberJaw can be discreetly plugged into a network for reconnaissance and exploitation.
+> **A compact, plug-and-play cyber tool for red teams and pentesters.**
 
 ---
 
-## Features
+## 🚀 Overview
 
-- 🔌 **Hotplug Attack Capability** – Auto-runs payloads upon connection.  
-- 🔍 **Network Recon & Exploitation** – Executes `nmap` scans, packet captures, and automated attack scripts.  
-- ⚙️ **Customizable Payloads** – Runs Bash, Python, or custom scripts.  
-- 📶 **Wireless Connectivity** – Uses Wi-Fi for remote control if needed.  
+**CyberJaw** is a stealthy, Raspberry Pi Zero 2W–based network attack device inspired by the [Shark Jack](https://hak5.org/products/shark-jack). Built for red team operations and network reconnaissance, CyberJaw discreetly plugs into a network and immediately begins scanning, sniffing, or launching scripted payloads.
 
----
-
-## Hardware Requirements
-
-- Raspberry Pi Zero 2W  
-- W5500 Ethernet module  
-- Ethernet cable  
-- 18650 Battery and shield
-
----
-   
-## Usage
-
-1. Plug CyberJaw into a target network.
-2. It will automatically execute reconnaissance and attack scripts.
-3. Retrieve results via SSH through an ad-hoc Wi-Fi connection.
-
----
-## Future Enhancements
-
-- Add Ethernet pass-through functionality.  
-- Implement encrypted communication for data exfiltration.  
-- Develop a dedicated web interface for remote control.  
+Whether you're auditing network infrastructure or simulating insider threats, CyberJaw provides a pocket-sized edge.
 
 ---
 
-## Disclaimer
+## 🛠️ Setup Guide
 
-> **CyberJaw is for educational and authorized security testing purposes only. Unauthorized use is illegal and unethical. Use responsibly.**
+To get started, follow these step-by-step guides:
+
+1. 🧱 [3D Printed Case & Hardware Assembly](./docs/resources/3d_Printed_Case_And_Assembly.md)  
+2. 🧩 [Hardware & Software Setup](./docs/resources/Hardware_And_Software_Setup.md)  
+3. 🔋 [Technical Specs & Charging Instructions](./docs/resources/Technical_Specs_And_Charging_Instructions.md)
+
+---
+
+## ✨ Features
+
+- 🔌 **Hotplug Execution** – Automatically executes attack payloads upon network connection.
+- 🔍 **Network Recon & Exploitation** – Performs stealthy scans (`nmap`), packet captures (`tcpdump`), and more.
+- 🧠 **Custom Payload Support** – Bash, Python, or any script you want—fully customizable.
+- 📡 **Remote Wireless Access** – Connect over Wi-Fi when physical access is no longer needed.
+
+---
+
+## 📦 Hardware Requirements
+
+To build your own CyberJaw, you’ll need:
+
+- 🧠 Raspberry Pi Zero 2W  
+- 🌐 W5500 Ethernet Module  
+- 🔌 Ethernet Cable  
+- 🔋 18650 Li-Ion Battery + Shield  
+- 🖨️ 3D Printed Case (optional, but recommended)
+
+---
+
+## ⚡ Usage
+
+1. Plug CyberJaw into the target network.
+2. Payloads execute automatically.
+3. Access CyberJaw via SSH to exfiltrate results or trigger remote scripts.
+
+---
+
+## 🧪 Future Enhancements
+
+- ⚡ Add Power Over Ethernet (PoE) capability  
+- 🛡️ Encrypted VPN-based C2 (Command & Control) communications  
+- 🌐 Web interface for visual payload management  
+
+---
+
+## ⚠️ Disclaimer
+
+> CyberJaw is intended **only** for educational purposes and **authorized security testing**.  
+> **Never use this device on networks without explicit permission.** Unauthorized use is **illegal and unethical**.  
+> Use responsibly. 💻🔐
+
+---
+
+## 📚 Credits & Sources
+
+- Power Consumption Data: [CNX Software – RPi Zero 2 W Power Tests](https://www.cnx-software.com/2021/12/09/raspberry-pi-zero-2-w-power-consumption/)
+- Inspired by the [Shark Jack](https://hak5.org/products/shark-jack) by Hak5
