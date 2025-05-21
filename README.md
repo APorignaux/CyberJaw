@@ -20,7 +20,61 @@
 - Raspberry Pi Zero 2W  
 - W5500 Ethernet module  
 - Ethernet cable  
-- 18650 Battery and shield  
+- 18650 Battery and shield
+
+## 🧱 3D Printed Case & Assembly
+
+This section explains how to print and assemble the CyberJaw hardware using the provided 3D-printed case files.
+
+### 1. 🖨️ Printing the Case
+
+You'll find all `.stl` files in the [`/3d_models/`](./3d_models/) directory for 3D printing the CyberJaw enclosure and its components.
+
+You have two options for the main case:
+
+- **Single-Part STL**  
+  Use this version if you have time for a longer print. It results in a stronger, more durable case printed as one solid piece.
+
+- **Multi-Part STL (Case + Separator)**  
+  This version breaks the case into two parts: the main case and an internal separator. It prints faster and fits on smaller printers.  
+  ➕ You'll need **super glue** to assemble both parts afterward.
+
+Additionally, there's a small component called:
+
+- **`switchON/OFF` Adapter**  
+  This piece is designed to extend the physical on/off switch on the battery shield, which would otherwise be inaccessible once inside the case.  
+  It looks like a small "crab claw" and is meant to fit over the existing shield switch.  
+  ➤ After printing:
+  1. Insert the part into its slot in the case.
+  2. Gently glue it to the switch's protruding shaft.
+  3. Once fixed, it lets you control power from outside the case.
+
+### 2. 🧩 Assembling the Hardware
+
+To mount the internal components:
+
+- Use **3mm thick countersunk head bolts**.
+- Cut them to about **4mm long** so they anchor into the plastic without poking through (which could cause short circuits).
+- You can control the cut length by placing **two nuts on the bolt**, then trimming with a Dremel or file.
+
+> ⚠️ Note: The mounting holes are intentionally slightly narrower than 3mm so the bolts stay firmly in place without wobbling.
+
+### 3. 🔌 Power Supply Wiring
+
+To power the Raspberry Pi via the battery shield:
+
+1. Plug a regular USB cable into the USB output port on the shield.
+2. Cut the **other end** of the USB cable to expose the **power wires** (typically red and black).
+3. Solder each wire to individual jumper wires.
+4. Use the table below to connect them correctly to the Pi’s GPIO power input pins.
+
+| Wire Color | Function     | Connects To (GPIO Pin) |
+|------------|--------------|------------------------|
+| Red        | +5V Power    | Pin 2 or Pin 4         |
+| Black      | Ground (GND) | Pin 6 or Pin 9         |
+
+> Make sure to double-check polarity before powering on.
+
 
 ---
 
@@ -168,6 +222,71 @@ To conserve energy, we’ll disable several components that are unnecessary for 
 
 ---
 
+## ⚙️ CyberJaw Technical Specifications & Power Management
+
+This section outlines the hardware specifications, power efficiency, and charging guidelines for the CyberJaw device.
+
+### 🔋 Power Supply & Efficiency
+
+- **Battery Type**: 18650 Li-Ion cell (e.g., 3600mAh)
+- **Battery Shield**: AZDelivery 18650 Battery Expansion Shield V3
+- **Output Voltage**:
+  - **5V/1A** via USB port
+  - **3V/1A** via expansion pins
+- **Conversion Efficiency**: Up to 95%
+- **Idle Power Consumption**: ~97mA
+- **Estimated Idle Runtime**: ~37 hours on a 3600mAh battery
+
+> ⚠️ Note: Actual runtime may vary based on active tasks and environmental conditions.
+
+### 🔌 Charging Guidelines
+
+- **Input Voltage**: 5V DC (via Micro USB)
+- **Recommended Charger**: 5V/1A USB power supply
+- **Charging Current**: 500mA
+- **Estimated Charging Time**: Approximately 7–8 hours for a 3600mAh battery
+
+> ⚠️ Caution: Ensure correct polarity when inserting the battery to prevent damage.
+
+### 📦 Hardware Components
+
+- **Mainboard**: Raspberry Pi Zero 2W
+- **Ethernet Module**: W5500 (operates at 3.3V)
+- **Battery Shield**: AZDelivery 18650 Battery Expansion Shield V3
+- **Battery**: 18650 Li-Ion cell (e.g., 3600mAh)
+- **3D Printed Case**: Custom-designed enclosure with optional `switchON/OFF` adapter
+
+### 🔧 Power Optimization Features
+
+To enhance power efficiency:
+
+- **CPU Frequency**: Reduced to 600MHz
+- **Disabled Components**:
+  - GPU
+  - HDMI
+  - Audio
+  - Camera interface
+  - Power LED
+
+These optimizations are configured via the `config.txt` file. A pre-configured version is available at [`/docs/resources/config.txt`](./docs/resources/config.txt).
+
+> 💡 Tip: Disabling unused components conserves battery life and reduces heat generation.
+
+### 📈 Performance Summary
+
+| Component           | Specification           |
+|---------------------|-------------------------|
+| CPU Frequency       | 600MHz                  |
+| Idle Current Draw   | ~97mA                   |
+| Battery Capacity    | 3600mAh                 |
+| Estimated Idle Time | ~37 hours               |
+| Charging Time       | ~7–8 hours              |
+| Output Voltage      | 5V/1A (USB), 3V/1A (pins)|
+| Ethernet Voltage    | 3.3V (W5500 module)     |
+
+> 🔗 For more details on the AZDelivery 18650 Battery Expansion Shield V3, refer to the [official product page](https://www.az-delivery.de/en/products/battery-expansion-shield-18650-v3-inkl-usb-kabel).
+
+---
 ## Future Enhancements
 
 - Add Ethernet pass-through functionality.  
