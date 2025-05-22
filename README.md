@@ -46,8 +46,8 @@ To build your own CyberJaw, you’ll need:
 ## ⚡ Usage
 
 1. Plug CyberJaw into the target network.
-2. Payloads execute automatically.
-3. Access CyberJaw via SSH to exfiltrate results or trigger remote scripts.
+2. Access CyberJaw via SSH
+3. You're now in the matrix
 
 ---
 
