@@ -24,7 +24,7 @@ Additionally, there's a small component called:
   1. Insert the part into its slot in the case.
   2. Gently glue it to the switch's protruding shaft.
   3. Once fixed, it lets you control power from outside the case.
-  > It should look like [this](/docs/ressources/Images/glued_ON:OFF_extentsion.jpeg)
+  > It should look like [this](/docs/resources/Images/glued_ON:OFF_extentsion.jpeg)
 
 ---
 
