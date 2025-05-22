@@ -25,7 +25,7 @@ This section outlines the hardware specifications, power efficiency, and chargin
 
 > ⚠️ Caution: Ensure correct polarity when inserting the battery to prevent damage.
 > 📷 Here's what the charging slot looks like in the assembled case:  
-![Charging Slot](/docs/resources/Images/charging_Slot.jpeg)
+> [Charging Slot](/docs/resources/Images/charging_Slot.jpeg)
 
 ### 📦 Hardware Components
 
