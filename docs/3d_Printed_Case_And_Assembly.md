@@ -37,6 +37,13 @@ To mount the internal components:
 
 > ⚠️ Note: The mounting holes are intentionally slightly narrower than 3mm so the bolts stay firmly in place without wobbling.
 
+🪚 **Important Fit Tip**  
+Before assembling the lid and box:
+
+- Lightly **sand the inner edges** where the lid and the case meet using **160 grit sandpaper**.
+- This smooths out any irregularities and slightly **chamfers the corners**, making it much easier to open and close the case.
+- Don’t over-sand! A small adjustment is enough — too much, and the lid may no longer hold tightly.
+
 ---
 
 ### 3. 🔌 Power Supply Wiring
@@ -57,7 +64,7 @@ To power the Raspberry Pi via the battery shield:
 
 ---
 
-### 4. 🧲 Stealth Magnet Mounting
+### 4. 🧲 Stealth Magnet Mounting (Optional, But Cool)
 
 For improved stealth deployment, you can **magnetize the CyberJaw case** to discreetly attach it under a switch, desk, or any metal surface:
 
