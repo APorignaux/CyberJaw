@@ -25,6 +25,8 @@ Additionally, there's a small component called:
   2. Gently glue it to the switch's protruding shaft.
   3. Once fixed, it lets you control power from outside the case.
 
+---
+
 ### 2. 🧩 Assembling the Hardware
 
 To mount the internal components:
@@ -34,6 +36,8 @@ To mount the internal components:
 - You can control the cut length by placing **two nuts on the bolt**, then trimming with a Dremel or file.
 
 > ⚠️ Note: The mounting holes are intentionally slightly narrower than 3mm so the bolts stay firmly in place without wobbling.
+
+---
 
 ### 3. 🔌 Power Supply Wiring
 
@@ -49,5 +53,18 @@ To power the Raspberry Pi via the battery shield:
 | Red        | +5V Power    | Pin 2 or Pin 4         |
 | Black      | Ground (GND) | Pin 6 or Pin 9         |
 
-> Make sure to double-check polarity before powering on.
+> 🔋 Make sure to double-check polarity before powering on.
 
+---
+
+### 4. 🧲 Stealth Magnet Mounting
+
+For improved stealth deployment, you can **magnetize the CyberJaw case** to discreetly attach it under a switch, desk, or any metal surface:
+
+- Glue a **strong magnet** inside the upper wall of the printed case (on the side that will face upward during mounting).
+- An old **hard disk drive (HDD) magnet** works great — powerful, flat, and easy to find.
+- The device can then cling to metal surfaces securely and remain **virtually unnoticed**, especially if installed in tight or shadowed areas.
+
+> 📷 Check out [this photo gallery](./docs/resources/images/magnet_stealth_mounting.md) for visual inspiration.
+
+---
