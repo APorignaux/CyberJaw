@@ -15,6 +15,10 @@ You have two options for the main case:
   This version breaks the case into two parts: the main case and an internal separator. It prints faster and fits on smaller printers.  
   ➕ You'll need **super glue** to assemble both parts afterward.
 
+![Case Part 1](../Images/Case1.jpeg)
+![Case Part 2](../Images/Case2.jpeg)
+![Case Assembled](../Images/Case3.jpeg)
+
 Additionally, there's a small component called:
 
 - **`switchON/OFF` Adapter**  
@@ -24,7 +28,8 @@ Additionally, there's a small component called:
   1. Insert the part into its slot in the case.
   2. Gently glue it to the switch's protruding shaft.
   3. Once fixed, it lets you control power from outside the case.
-  > It should look like [this](/docs/resources/Images/glued_ON:OFF_extentsion.jpeg)
+
+![Glued ON/OFF Extension](../Images/glued_ON:OFF_extentsion.jpeg)
 
 ---
 
@@ -45,6 +50,8 @@ Before assembling the lid and box:
 - This smooths out any irregularities and slightly **chamfers the corners**, making it much easier to open and close the case.
 - Don’t over-sand! A small adjustment is enough — too much, and the lid may no longer hold tightly.
 
+![Smooth Corner Sanding](../Images/smooth_corner_and_glued_switch.jpeg)
+
 ---
 
 ### 3. 🔌 Power Supply Wiring
@@ -63,6 +70,8 @@ To power the Raspberry Pi via the battery shield:
 
 > 🔋 Make sure to double-check polarity before powering on.
 
+![Power Wiring](../Images/wired_ethernet.jpeg)
+
 ---
 
 ### 4. 🧲 Stealth Magnet Mounting (Optional, But Cool)
@@ -73,6 +82,7 @@ For improved stealth deployment, you can **magnetize the CyberJaw case** to disc
 - An old **hard disk drive (HDD) magnet** works great — powerful, flat, and easy to find.
 - The device can then cling to metal surfaces securely and remain **virtually unnoticed**, especially if installed in tight or shadowed areas.
 
-> 📷 Check out [this photo gallery](./docs/resources/images/magnet_stealth_mounting.md) for visual inspiration.
+![Glued Magnet](../Images/glued_magnet.jpeg)
+![Powered Up Project](../Images/Powered_up_Project.jpeg)
 
 ---
