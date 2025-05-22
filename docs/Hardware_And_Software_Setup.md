@@ -14,7 +14,7 @@ Before anything else, the wiring must be done correctly. Below is a table that s
 | 24                      | SPI0_CE0           | SCNn         |
 
 🖼️ **Raspberry Pi Pin Layout:**  
-![Pin Dispositions](../Images/pins_dispositions.png)
+[Pin Dispositions](../ressources/Images/pins_dispositions.png)
 
 ---
 
